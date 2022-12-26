@@ -29,20 +29,20 @@ aws ec2 create-subnet --vpc-id $VPC \
 # Create environment variables for your subnets
 export AZ1SUB=subnet-04bc4f621f670e64b
 export AZ2SUB=subnet-0a70e9f5ae4684722
-# Create your EC2 instances using the AMI id of ami-0742b4e673072066f (the free tier eligible AMI), two in each subnet; one for the video server and the other for the web server
-aws ec2 run-instances --image-id ami-0742b4e673072066f \
+# Create your EC2 instances using the AMI id of ami-*************** (the free tier eligible AMI), two in each subnet; one for the video server and the other for the web server
+aws ec2 run-instances --image-id ami-************** \
       --instance-type t2.micro --count 1 --subnet-id $AZ1SUB \
       --key-name MyALBKeyPair2 --security-group-ids $SGID \
       --associate-public-ip-address --user-data file://tcp-server-1.txt
-aws ec2 run-instances --image-id ami-0742b4e673072066f \
+aws ec2 run-instances --image-id ami-************** \
       --instance-type t2.micro --count 1 --subnet-id $AZ2SUB \
       --key-name MyALBKeyPair2 --security-group-ids $SGID \
       --associate-public-ip-address --user-data file://tcp-server-2.txt
-aws ec2 run-instances --image-id ami-0742b4e673072066f \
+aws ec2 run-instances --image-id ami-************** \
       --instance-type t2.micro --count 1 --subnet-id $AZ1SUB \
       --key-name MyALBKeyPair2 --security-group-ids $SGID \
       --associate-public-ip-address --user-data file://udp-server-1.txt
-aws ec2 run-instances --image-id ami-0742b4e673072066f \
+aws ec2 run-instances --image-id ami-************** \
       --instance-type t2.micro --count 1 --subnet-id $AZ2SUB \
       --key-name MyALBKeyPair2 --security-group-ids $SGID \
       --associate-public-ip-address --user-data file://udp-server-2.txt
