@@ -1,0 +1,14 @@
+#How to create server certificates 
+This are the steps nessary to create certificates using easy-rsa which are used to authenticate are server. We will then import the certs into ACM
+
+Steps for downloading and creating Cert on linux
+
+open a terminal
+cd /tmp
+git clone https://github.com/OpenVPN/easy-rsa.git
+cd easy-rsa/easyrsa3
+./easyrsa init-pki
+./easyrsa build-ca nopass
+ANIMALS4LIFEVPN
+./easyrsa build-server-full server nopass
+aws acm import-certificate --certificate fileb://pki/issued/server.crt --private-key fileb://pki/private/server.key --certificate-chain fileb://pki/ca.crt --profile iamadmin-general
