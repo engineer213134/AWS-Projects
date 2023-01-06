@@ -11,4 +11,4 @@ cd easy-rsa/easyrsa3
 ./easyrsa build-ca nopass
 ANIMALS4LIFEVPN
 ./easyrsa build-server-full server nopass
-aws acm import-certificate --certificate fileb://pki/issued/server.crt --private-key fileb://pki/private/server.key --certificate-chain fileb://pki/ca.crt --profile iamadmin-general
+aws acm import-certificate --certificate fileb://pki/issued/server.crt --private-key fileb://pki/private/server.key --certificate-chain fileb://pki/ca.crt --profile <USER_PROFILE>
