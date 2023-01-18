@@ -1,0 +1,11 @@
+1) Enable GuardDuty in your region in your account
+
+2) Generate sample findings
+
+3) Configure GuardDuty Findings export to S3
+
+4) Configure GuardDuty findings alerts through SNS
+
+5) Create EventBridge rule to format rule findings 
+
+6) Test archtectire by generating sample findings again
