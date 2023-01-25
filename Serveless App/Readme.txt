@@ -10,4 +10,4 @@ Project consists of 6 stages :-
     STAGE 6 : Cleanup the account
     
     
-    Serveless App/Screenshot from 2023-01-23 17-29-51.png
+  https://github.com/engineer213134/AWS-Projects/blob/096ad26215debb88769983d54dd0a2ae94617a0e/Serveless%20App/Screenshot%20from%202023-01-24%2019-41-14.png
