@@ -1,0 +1,14 @@
+How to connect To RDS via workbench
+
+Install MySQL Workbench
+Create a connection to our RDS MySQL instance
+Create a schema
+create a table
+insert some data
+create a manual snapshot
+
+Open MySQL workbench and connect to RDS instance via mySQL connection window
+Create a new schema name it products
+Create a table name it retail
+Add data to that table
+Create a smap shot of the data base created
