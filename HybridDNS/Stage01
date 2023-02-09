@@ -1,0 +1,7 @@
+Welcome to STAGE1 of this Advanced Demo where you will gain practical experience using a Hybrid ONPREMISES & AWS DNS Environment You will perform the following tasks:-
+
+Provision the environments <== THIS STAGE
+Verify no IP & DNS Connectivity <== THIS STAGE
+Configure a VPC Peer between the environments
+Configure inbound R53 Endpoints allowing the on-premises environment to resolve AWS
+Configure outbound R53 Endpoints allowing the AWS environment to resolve on-premises
